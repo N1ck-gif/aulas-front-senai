@@ -1,4 +1,6 @@
 const $calcular = document.getElementById('calcular');
+const $exibir = document.getElementById('exibir');
+const $container = document.querySelector('#container');
 
 //Função para calcular a media
 const calcularMedia = (n1,n2) => (parseInt(n1) + parseInt(n2)) /2;
@@ -31,7 +33,7 @@ function exibirMedia() {
 
 }
 // Função Arrow function
-const calcularConceito = () => {
+const defineConceito = () => {
     //Chama o valor da media para fazer o conceito
     const media = document.getElementById('media').value;
     const $conceito = document.getElementById('conceito');
@@ -48,10 +50,13 @@ const calcularConceito = () => {
     }
 }
 
-const calcular = () => {
+const exibirResultado = () => {
     exibirMedia();
-    calcularConceito();
+    defineConceito();
 }
 
-$calcular.addEventListener('click', calcular);
+const exibir = (el) => el.classList.add('exibir');
+
+$calcular.addEventListener('click', exibirResultado);
+$exibir.addEventListener('click',( ) => exibir ( $container ));
 

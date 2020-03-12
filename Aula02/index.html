@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> IMC </title>
+    <style>
+        *{
+            margin: 0;
+            font-family: verdana;
+        }
+        header{
+            width: 100vw;
+            height: 10vw;
+            background-color: cadetblue;
+            color: white;
+            font-family: verdana;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        main{
+            width: 80vw;
+            height: 50vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: 5vw auto;
+            background-color: coral;
+            padding: 5vw;
+            box-sizing: border-box;
+        }
+        main label {
+            color: black;
+        }
+        main input {
+            border: none;
+            border-bottom: 1px solid black;
+            outline: none;
+            background-color: coral;
+        }
+        footer{
+            width: 80vw;
+            height: 15vw;
+            background-color: coral;
+            margin: auto;
+            box-sizing: border-box;
+            padding: 2vw;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> IMC - JavaScript</h1>
+    </header>
+
+    <main>
+        <label for="">Nome:</label>
+        <input type="text" id="nome">
+        <label for="">Peso:</label>
+        <input type="text" id="peso">
+        <label for="">Altura:</label>
+        <input type="text" id="altura">
+
+        <div>
+            <button id="calcular">Calcular</button>   
+        </div>
+        
+    </main>
+    <footer id="resultado"></footer>
+    <script src="imc.js"></script>
+</body>
+</html>

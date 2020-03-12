@@ -7,42 +7,61 @@
         <title>Testando o javaScript</title>
         
         <style>
-            .aprovado{
-                color: green;
-                margin: 5px;
-                border: none;
-            }
-            .reprovado{
-                color: red;
-                margin: 5px;
-                border: none;
-            }
-            #conceito{
-                font-weight: bolder;
-            }
+        .conteiner {
+            display: none;
+            justify-items: center;
+            gap: 1vh;
+        }
+
+        .exibir {
+            display: grid;
+        }
+        #exibir {
+            cursor: pointer;
+        }
+
+        .aprovado {
+            color: green;
+            margin: 5px;
+            border: none;
+        }
+
+        .reprovado {
+            color: red;
+            margin: 5px;
+            border: none;
+        }
         </style>
     </head>
     <body>
-        <h1>Controle de Notas</h1>
-        Nome<br>
-        <input type="text" id="nome">
 
-        <br><br>Nota1: <br>
-        <input type="text" id="nota1">
+        <button id="exibir"> exibir </button>
 
-        <br><br>Nota2: <br>
-        <input type="text" id="nota2">
-        
-        <br><br>Media:<br>
-        <input type="text" id="media" disabled>
+        <div class="conteiner">
+            <h1>Controle de Notas</h1>
+            <label> Nome:
+                <input type="text" id="nome">
+            </label>
+            <label>Nota1:
+                <input type="text" id="nota1">
+            </label>
+            <label>
+                Nota2:
+                <input type="text" id="nota2">
+            </label>
+                Média:
+                <input type="text" id="media" disabled>
+            </label>
+            Situação:
+            <input type="text" id="situacao" disabled>
+            Conceito:
+            <input type="text" id="conceito" disabled>
 
-        <br><br>Situação:<br>
-        <input type="text" id="situacao" disabled> 
-        <br><br>Conceito:<br>
-        <input type="text" id="conceito" disabled>
-
-        <br><br><input type="button" value="calcular" id="calcular">
+            <input type="button" value="calcular" id="calcular">
+        </div>
 
         <script src="./script.js"></script>
+
+        
     </body>
 </html>
