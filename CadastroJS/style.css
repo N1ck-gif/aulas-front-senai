@@ -1,0 +1,141 @@
+body{
+    background-color: #019bd3;
+}
+
+.cadastro-form {
+    background-color: white;
+    width: 80vw;
+    margin: 10vh auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #000;
+}
+
+.titulo{
+    background-color: #1668c4;
+    height: 45px;
+    text-align: center;
+    /* 16/45 está centralizando a fonte no meio */
+    font: bold 16px/45px sans-serif;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 1px 0px 5px #000;
+    color: white;
+}
+
+.subtitulo{
+    display: flex;
+    /* espalha os elementos mas deixa o primeiro e o último centralizado alinhados um á direita e o outro a esquerda */
+    justify-content: space-between;
+    padding: 2vw;
+}
+
+.subtitulo div{
+    color: #1668c4;
+    font: bold calc(12px + 1vw)/45px sans-serif;
+    text-shadow: 1px 1px 1px black;
+}
+
+.botao{
+    font: bold calc(2px + 1vw) sans-serif;
+    background-color: white;
+    border: 1px solid #0058A0;
+    border-radius: 5px;
+    color: #0066B8;
+    box-shadow: 0px 0px 3px black;
+    cursor: pointer;
+}
+
+.bortao:hover{
+    background-color: #1668c4;
+    color: white;
+}
+
+.conteiner-modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000090;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -10;
+    opacity: 0;
+}
+
+.modal {
+    width: 50vw;
+    margin: 10vh auto;
+    background-color: white;
+    overflow: hidden;
+}
+
+.form{
+    display: grid;
+    grid-template-areas: 
+        "nome nome nome nome"
+        "email email celular celular"
+        "endereco numero bairro bairro"
+        "cidade cidade estado cep";
+
+    /* espaço entre os elmentos */
+    gap: 10px;
+    padding: 2vw;
+}
+
+#nome { grid-area: nome; }
+#email { grid-area: email; }
+#celular { grid-area: celular; }
+#endereco { grid-area: endereco; }
+#numero { grid-area: numero; }
+#bairro { grid-area: bairro; }
+#cidade { grid-area: cidade; }
+#estado { grid-area: estado; }
+#cep { grid-area: cep; }
+
+.form > input {
+    width: 100%;
+}
+
+/* vai executar apenas quando as duas classes estiverem juntas no elemento */
+.conteiner-modal.exibirModal{
+    opacity: 1;
+    z-index: 5000;
+}
+
+.acao{
+    display: flex;
+    justify-content: center;
+    padding: 2vw;
+}
+
+.botao{
+    font: bold calc(2px + 1vw) sans-serif;
+    margin: 1vw;
+}
+
+.tabela {
+    width: 100%;
+    background-color: #1668c4;
+    border-radius: 5px;
+}
+
+th{
+    padding: 5px;
+    color: white;
+    font: bold calc(3px + 1vh) sans-serif;
+}
+
+td{
+    border-radius: 5px;
+    border: 1px solid #0a2f59;
+    color: black;
+    font: bold calc(2px + 1vh) sans-serif;
+}
+
+.registros tr {
+    background-color: #78b4f8;
+}
+
+.registros tr:hover {
+    background-color: #0a2f59;
+    color: white;
+}
