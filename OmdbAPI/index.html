@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <video autoplay muted loop id="myVideo">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <div id="container">
+            <h1>OMDb API</h1>
+            <input type="text" id="buscaTitle" placeholder="Titulo">
+            <input type="text" id="buscaAno" placeholder="Ano(Opcional)">
+            <div>
+                <input type="button" value="Buscar" id="botao">
+            </div>
+            <div id="containerCard">
+                <div id="img">
+                    
+                </div>
+                <div id="infrm">
+                    <h2 class="dados"> Titulo: </h2>
+                    <h2 class="dados"> Ano: </h2>
+                    <h2 class="dados"> Lançamento: </h2>
+                    <h2 class="dados"> Duração: </h2>
+                    <h2 class="dados"> Gênero: </h2>
+                    <h2 class="dados"> País: </h2>
+                    <h2 class="dados"> Atores: </h2>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <script src="http://code.jquery.com/jquery-1.7.2.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
